@@ -1,0 +1,26 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: zuul9527.com
+    prefer-ip-address: true
+
+info:
+  app.name: yuan
+  company: ZJU
+  version: 1.1.1
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider-dept-8001
+    mydept.path: /mydept/**
+  ignored-services: springcloud-provider-dept-8001 # 不能再使用这个路径访问了 # “*”隐藏全部
+  prefix: /yuan # 统一前缀
+

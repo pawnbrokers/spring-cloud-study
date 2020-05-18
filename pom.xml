@@ -18,6 +18,13 @@
         <module>springcloud-provider-dept-8002</module>
         <module>springcloud-provider-dept-8003</module>
         <module>springcloud-consumer-feign</module>
+        <module>springcloud-provider-dept-hystrix-8004</module>
+        <module>springcloud-consumer-hystrix-dashboard</module>
+        <module>springcloud-consumer-hystrix-dashboard-9001</module>
+        <module>springcloud-sonsumer-feign2</module>
+        <module>springcloud-consummer-feign2</module>
+        <module>springcloud-zuul-9527</module>
+        <module>springcloud-config-server-3344</module>
     </modules>
     <packaging>pom</packaging>
 
